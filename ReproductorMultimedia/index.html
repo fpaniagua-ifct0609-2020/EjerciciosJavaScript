@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function afirmativo(){
+        document.getElementById("correcto").play();
+    }
+    function negativo(){
+        document.getElementById("incorrecto").play();
+    }        
+    </script>
+</head>
+<body>
+    <div>
+        <img src="images/batman.jpg">
+        <div>
+            ¿Es un mamífero?
+            <input id="boton1" type="button" value="Sí" onclick="afirmativo()" style="padding:10px;padding-left:50px;padding-right:50px;background-color: greenyellow;">
+            
+            <button id="boton2" onclick="negativo()" style="padding:10px;padding-left:50px;padding-right:50px;background-color: hotpink">No</button>
+        </div>
+    </div>
+
+
+    <div>
+        <video id="correcto" width="400" height="300" controls>
+            <source src="videos/trailer.mov" type="video/mp4">
+        </video>
+        <video id="incorrecto" width="400" height="300" controls>
+            <source src="https://movietrailers.apple.com/movies/lionsgate/spiral/spiral-trailer-1_h480p.mov" type="video/mp4">
+        </video>
+    </div>
+
+    
+    
+    <div>
+        <iframe id="morata" width="560" height="315" src="https://www.youtube.com/embed/q4_hu1ZBtNY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+    </div>
+
+    <div>
+        <iframe src="https://player.vimeo.com/video/155186675" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.328327950924!2d-3.672653384293657!3d40.42372816313702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228afd0d681f7%3A0x7730941089b4860e!2sCICE%20Escuela%20Profesional%20de%20Nuevas%20Tecnolog%C3%ADas!5e0!3m2!1ses!2ses!4v1581681119474!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+</body>
+</html>
